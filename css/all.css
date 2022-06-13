@@ -70,17 +70,26 @@ body {
   margin: 0 auto;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
   background-repeat: no-repeat;
+  background-size: auto 100vh;
   background-position: top right;
-  background-size: 100vh auto;
   font-family: verdana;
-  max-width: 1366px;
 }
 
 @media (max-width: 768px) {
   body {
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-size: auto 100vh;
+    background-position: top right;
+  }
+}
+
+@media (max-width: 568px) {
+  body {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+    background-repeat: no-repeat;
+    background-size: 89.067vw 36.645vh;
+    background-position: 5.333vw 58.564vh;
   }
 }
 
@@ -88,10 +97,17 @@ body {
   height: 100vh;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg");
   background-repeat: no-repeat;
-  background-size: 38.946vw;
-  background-position-x: 89.751%;
-  background-position-y: 15.365vh;
-  margin: 0 auto;
+  background-size: 38.946vw 69.440vh;
+  background-position: 50.805vw 15.345vh;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg");
+    background-repeat: no-repeat;
+    background-size: 81.067vw 45.734vh;
+    background-position: 11.165vw 48.503vh;
+  }
 }
 
 .header h1 {
@@ -101,9 +117,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 24px;
 }
 
@@ -115,6 +131,14 @@ body {
 .header h1 .logo img {
   width: 218.06px;
   height: 40px;
+}
+
+@media (max-width: 568px) {
+  .header h1 .logo img {
+    margin-top: 8px;
+    width: 130px;
+    height: 24px;
+  }
 }
 
 .header h1 .botton {
@@ -142,6 +166,7 @@ body {
 .main {
   padding-top: 188px;
   padding-left: 141px;
+  width: 100%;
 }
 
 .main h2 {
@@ -165,10 +190,29 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .main {
+    padding-top: 4.790vh;
+    padding-left: 5.333vw;
+  }
+}
+
+@media (max-width: 568px) {
+  .main h2 {
+    font: normal normal bold 16px/24px Noto Sans TC;
+  }
+  .main h3 {
+    font: normal normal bold 32px/46px Noto Sans TC;
+  }
+  .main h4 {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+}
+
 .platform {
   margin-top: 100px;
-  padding-left: 193px;
-  padding-right: 204px;
+  padding-left: 14.129vw;
+  padding-right: 14.934vw;
 }
 
 .platform h5 {
@@ -213,10 +257,38 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .platform .card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .platform li {
+    width: 100%;
+    margin-bottom: 3.883vh;
+  }
+}
+
+@media (max-width: 568px) {
+  .platform .platform {
+    margin-top: 8.982vh;
+    padding-left: 16.533vw;
+    padding-right: 16.267vw;
+  }
+  .platform .card h5 {
+    font: normal normal bold 28px/40px Noto Sans TC;
+  }
+  .platform .card h6 {
+    font: normal normal bold 18px/26px Noto Sans TC;
+  }
+  .platform .card p {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+}
+
 .role {
   padding-top: 100px;
-  padding-left: 139px;
-  padding-right: 139px;
+  padding-left: 10.176vw;
+  padding-right: 10.176vw;
 }
 
 .role h7 {
@@ -245,6 +317,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .role ul li {
@@ -282,17 +355,46 @@ body {
   padding-bottom: 24px;
 }
 
-.funtion {
+@media (max-width: 768px) {
+  .role ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .role ul li {
+    width: 48.829%;
+    margin-bottom: 3.892vh;
+  }
+}
+
+@media (max-width: 568px) {
+  .role {
+    padding-top: 8.982vh;
+    padding-left: 5.333vw;
+    padding-right: 5.333vw;
+  }
+  .role h7 {
+    font: normal normal bold 28px/40px Noto Sans TC;
+  }
+  .role p {
+    font: normal normal normal 18px/26px Noto Sans TC;
+  }
+  .role ul li {
+    margin: 1.796vh auto;
+    width: 69.333%;
+  }
+}
+
+.function {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 100px;
   padding-left: 10%;
-  padding-right: 13.7%;
+  padding-right: 10.178%;
   gap: 13.7%;
 }
 
-.funtion .Ffirst ul {
+.function .Ffirst ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,7 +406,7 @@ body {
   max-width: 507px;
 }
 
-.funtion .Ffirst ul li {
+.function .Ffirst ul li {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   width: 45.365%;
   -webkit-box-shadow: 0px 2px 10px #00000014;
@@ -318,17 +420,17 @@ body {
   padding-right: 32px;
 }
 
-.funtion .Ffirst ul li img {
+.function .Ffirst ul li img {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 19px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  width: 39.130%;
 }
 
-.funtion .Ffirst ul li h9 {
+.function .Ffirst ul li h9 {
   display: block;
-  text-align: left;
   font: normal normal bold 18px/26px Noto Sans TC;
   letter-spacing: 0px;
   color: #221E1F;
@@ -337,23 +439,19 @@ body {
   padding-bottom: 16px;
 }
 
-.funtion .Ffirst ul li p {
-  text-align: left;
+.function .Ffirst ul li p {
   font: normal normal normal 16px/24px Noto Sans TC;
   letter-spacing: 0px;
   color: #221E1F;
   opacity: 1;
-  text-align: left;
 }
 
-.funtion .Fsecond {
+.function .Fsecond {
   padding-top: 165px;
-  padding-right: 49px;
 }
 
-.funtion .Fsecond h10 {
+.function .Fsecond h10 {
   display: block;
-  text-align: left;
   font: normal normal bold 32px/46px Noto Sans TC;
   letter-spacing: 0px;
   color: #221E1F;
@@ -361,8 +459,7 @@ body {
   padding-bottom: 16px;
 }
 
-.funtion .Fsecond p {
-  text-align: left;
+.function .Fsecond p {
   font: normal normal normal 18px/26px Noto Sans TC;
   letter-spacing: 0px;
   color: #221E1F;
@@ -370,7 +467,8 @@ body {
   padding-bottom: 36px;
 }
 
-.funtion .Fsecond a {
+.function .Fsecond a {
+  display: inline-block;
   text-align: center;
   letter-spacing: 0px;
   color: #FFFFFF;
@@ -385,10 +483,44 @@ body {
   padding-right: 32px;
 }
 
+@media (max-width: 768px) {
+  .function {
+    padding-top: 0vh;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .function .Ffirst {
+    width: 100%;
+  }
+  .function .Ffirst ul {
+    margin: 0 auto;
+  }
+  .function .Fsecond {
+    padding-top: 4.192vh;
+    padding-bottom: 4.79vh;
+    padding-right: 0vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .function .Fsecond h10 {
+    font: normal normal bold 28px/40px Noto Sans TC;
+  }
+  .function .Fsecond p {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+}
+
+@media (max-width: 568px) {
+  .function .Ffirst ul li {
+    width: 61.333%;
+    margin-top: 0;
+    margin-left: 14.1333vw;
+    margin-right: 13.8667vw;
+  }
+}
+
 .comment {
   padding-top: 72px;
-  padding-left: 139px;
-  padding-right: 139px;
 }
 
 .comment p {
@@ -401,13 +533,14 @@ body {
 }
 
 .comment ul {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1088px;
+  width: 79.649vw;
 }
 
 .comment ul li {
@@ -460,6 +593,7 @@ body {
 }
 
 .comment ul li .job {
+  display: inline-block;
   text-align: left;
   font: normal normal normal 16px/24px Noto Sans TC;
   letter-spacing: 0px;
@@ -472,16 +606,51 @@ body {
   float: right;
 }
 
+@media (max-width: 768px) {
+  .comment p {
+    padding-bottom: 8.982vh;
+  }
+  .comment ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .comment ul li {
+    width: 100%;
+    margin: 4.192vh 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .comment p {
+    font: normal normal bold 28px/40px Noto Sans TC;
+  }
+  .comment ul li p {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+  .comment ul li h11 {
+    font: normal normal bold 16px/24px Noto Sans TC;
+  }
+  .comment ul li .job {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+}
+
 .footer {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
   background-repeat: no-repeat;
-  background-size: auto auto;
+  background-size: 100vw auto;
   margin-top: 134px;
   padding-top: 260px;
   padding-bottom: 128px;
 }
 
-.footer h12 {
+@media (max-width: 768px) {
+  .footer {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
+  }
+}
+
+.footer p {
   display: block;
   text-align: center;
   font: normal normal bold 32px/46px Noto Sans TC;
@@ -506,6 +675,13 @@ body {
   padding-bottom: 12px;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+@media (max-width: 568px) {
+  .footer p {
+    padding-bottom: 3.593vh;
+    font: normal normal bold 24px/35px Noto Sans TC;
+  }
 }
 
 .bottom p {
